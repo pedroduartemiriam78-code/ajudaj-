@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #12001f;
+    color: white;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #6c2bd9;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e0b3ff;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #12001f,
+        #250044,
+        #4b0082
+    );
+}
+
+.inicio h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.botao,
+button {
+    background-color: #8a2be2;
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.botao:hover,
+button:hover {
+    background-color: #a855f7;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    padding: 70px 10%;
+}
+
+.secao h2 {
+    color: #c084fc;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.secao > p {
+    margin-bottom: 30px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: #210035;
+
+    border: 1px solid #6c2bd9;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-top: 15px;
+
+    max-width: 700px;
+}
+
+.pequeno {
+    width: 250px;
+}
+
+.card h3 {
+    color: #d8b4fe;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* FORMULÁRIO */
+
+.card input,
+.card textarea,
+.card select,
+.secao > input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin: 8px 0 20px;
+
+    border-radius: 6px;
+
+    border: 1px solid #8a2be2;
+
+    background-color: #160022;
+
+    color: white;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #d8b4fe;
+}
+
+
+/* PERFIL */
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background-color: #210035;
+
+    border: 1px solid #6c2bd9;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    max-width: 700px;
+}
+
+.foto {
+    font-size: 60px;
+}
+
+
+/* CHAT */
+
+.chat {
+    background-color: #210035;
+
+    border: 1px solid #6c2bd9;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    max-width: 70%;
+}
+
+.outra {
+    background-color: #3b1761;
+}
+
+.minha {
+    background-color: #6c2bd9;
+    margin-left: auto;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: #19002b;
+}
+
+.sobre h3 {
+    color: #c084fc;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #08000d;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+footer h3 {
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 35px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .pequeno {
+        width: 100%;
+    }
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

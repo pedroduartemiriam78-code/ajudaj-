@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AjudaJá</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <h1>AjudaJá</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pedir">Pedir ajuda</a>
+            <a href="#ajudar">Quero ajudar</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="inicio">
+
+            <h2>Precisando de ajuda?</h2>
+
+            <p>
+                Encontre alguém que sabe fazer e resolva pequenos
+                problemas do dia a dia de forma rápida e prática.
+            </p>
+
+            <div class="botoes">
+
+                <a href="#pedir" class="botao">
+                    Preciso de ajuda
+                </a>
+
+                <a href="#ajudar" class="botao">
+                    Quero ajudar
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PEDIR AJUDA -->
+        <section id="pedir" class="secao">
+
+            <h2>Preciso de ajuda</h2>
+
+            <p>
+                Está com algum problema? Conte para a gente o que você precisa.
+            </p>
+
+            <div class="card">
+
+                <label>Título do problema</label>
+                <input type="text" placeholder="Ex: Preciso montar uma mesa">
+
+                <label>Descrição</label>
+                <textarea
+                    placeholder="Explique o que você precisa..."></textarea>
+
+                <label>Categoria</label>
+
+                <select>
+                    <option>Informática</option>
+                    <option>Montagem</option>
+                    <option>Elétrica</option>
+                    <option>Estudos</option>
+                    <option>Jardinagem</option>
+                    <option>Cuidados com animais</option>
+                    <option>Pequenos reparos</option>
+                    <option>Outros</option>
+                </select>
+
+                <label>Data e horário</label>
+                <input type="datetime-local">
+
+                <button>Publicar solicitação</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUERO AJUDAR -->
+        <section id="ajudar" class="secao">
+
+            <h2>Quero ajudar</h2>
+
+            <p>
+                Você possui alguma habilidade? Encontre pessoas que precisam
+                da sua ajuda.
+            </p>
+
+            <div class="cards">
+
+                <div class="card pequeno">
+                    <h3>💻 Informática</h3>
+                    <p>
+                        Ajude com computadores, impressoras,
+                        programas e tecnologia.
+                    </p>
+                </div>
+
+                <div class="card pequeno">
+                    <h3>🔧 Montagem</h3>
+                    <p>
+                        Ajude na montagem de móveis e pequenos reparos.
+                    </p>
+                </div>
+
+                <div class="card pequeno">
+                    <h3>🌱 Jardinagem</h3>
+                    <p>
+                        Ajude pessoas com plantas e cuidados com jardins.
+                    </p>
+                </div>
+
+                <div class="card pequeno">
+                    <h3>📚 Estudos</h3>
+                    <p>
+                        Compartilhe seus conhecimentos e ajude outras pessoas.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOLICITAÇÕES -->
+        <section class="secao">
+
+            <h2>Solicitações de ajuda</h2>
+
+            <div class="cards">
+
+                <div class="card pedido">
+
+                    <h3>💻 Configurar impressora</h3>
+
+                    <p>
+                        Preciso de ajuda para configurar minha impressora
+                        no computador.
+                    </p>
+
+                    <span>Categoria: Informática</span>
+
+                    <br>
+
+                    <span>Status: Aguardando ajuda</span>
+
+                    <br><br>
+
+                    <button>Tenho interesse</button>
+
+                </div>
+
+
+                <div class="card pedido">
+
+                    <h3>🪑 Montar uma mesa</h3>
+
+                    <p>
+                        Comprei uma mesa e preciso de ajuda para realizar
+                        a montagem.
+                    </p>
+
+                    <span>Categoria: Montagem</span>
+
+                    <br>
+
+                    <span>Status: Aguardando ajuda</span>
+
+                    <br><br>
+
+                    <button>Tenho interesse</button>
+
+                </div>
+
+
+                <div class="card pedido">
+
+                    <h3>📚 Ajuda nos estudos</h3>
+
+                    <p>
+                        Preciso de ajuda para entender programação.
+                    </p>
+
+                    <span>Categoria: Estudos</span>
+
+                    <br>
+
+                    <span>Status: Aguardando ajuda</span>
+
+                    <br><br>
+
+                    <button>Tenho interesse</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFIL -->
+        <section class="secao">
+
+            <h2>Perfil do usuário</h2>
+
+            <div class="perfil">
+
+                <div class="foto">👤</div>
+
+                <div>
+
+                    <h3>João da Silva</h3>
+
+                    <p>
+                        Pessoa disponível para ajudar com informática
+                        e tecnologia.
+                    </p>
+
+                    <p>⭐ 4.8 — 25 avaliações</p>
+
+                    <p>
+                        <strong>Habilidades:</strong>
+                        Informática, computadores e impressoras.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT -->
+        <section class="secao">
+
+            <h2>💬 Chat</h2>
+
+            <div class="chat">
+
+                <div class="mensagem outra">
+                    Olá! Vi sua solicitação.
+                </div>
+
+                <div class="mensagem minha">
+                    Oi! Preciso configurar minha impressora.
+                </div>
+
+                <div class="mensagem outra">
+                    Posso te ajudar. Podemos combinar um horário?
+                </div>
+
+            </div>
+
+            <input
+                type="text"
+                placeholder="Digite uma mensagem...">
+
+            <button>Enviar mensagem</button>
+
+        </section>
+
+
+        <!-- AVALIAÇÕES -->
+        <section class="secao">
+
+            <h2>⭐ Avaliações</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Maria</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "A pessoa me ajudou muito a configurar meu computador."
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Carlos</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "Foi rápido e resolveu meu problema."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEGURANÇA -->
+        <section class="secao">
+
+            <h2>🔒 Segurança</h2>
+
+            <p>
+                A segurança dos usuários é uma parte importante do AjudaJá.
+            </p>
+
+            <div class="cards">
+
+                <div class="card pequeno">
+                    <h3>🔐 Cadastro seguro</h3>
+                    <p>
+                        Sistema de cadastro e login para os usuários.
+                    </p>
+                </div>
+
+                <div class="card pequeno">
+                    <h3>🚫 Denúncias</h3>
+                    <p>
+                        Usuários podem denunciar comportamentos inadequados.
+                    </p>
+                </div>
+
+                <div class="card pequeno">
+                    <h3>⭐ Avaliações</h3>
+                    <p>
+                        As avaliações ajudam a criar confiança na plataforma.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section id="sobre" class="secao sobre">
+
+            <h2>Sobre o AjudaJá</h2>
+
+            <p>
+                O AjudaJá é uma plataforma criada para conectar pessoas
+                que precisam de ajuda com pessoas que possuem conhecimentos
+                e habilidades para ajudar.
+            </p>
+
+            <p>
+                A ideia é tornar a busca por ajuda mais rápida,
+                simples, organizada e acessível.
+            </p>
+
+            <h3>Nosso objetivo</h3>
+
+            <p>
+                Facilitar a resolução de pequenos problemas do dia a dia
+                através da colaboração entre pessoas.
+            </p>
+
+            <h3>Como funciona?</h3>
+
+            <p>
+                O usuário cria uma solicitação, encontra alguém que pode
+                ajudar, conversa pelo chat, combina os detalhes e,
+                depois da conclusão, pode avaliar a experiência.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>AjudaJá</h3>
+
+        <p>
+            Uma ponte entre quem precisa e quem sabe fazer.
+        </p>
+
+        <p>
+            © 2026 AjudaJá - Projeto acadêmico
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
